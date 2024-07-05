@@ -11,3 +11,16 @@ spec:
     metadata:
       labels:
         app: postgres
+    spec:
+      containers:
+        - name: postgres
+          image: postgres:13.1
+          env:
+            - name: POSTGRES_USER
+              value: postgres
+            - name: POSTGRES_PASSWORD
+              value: postgres
+            - name: POSTGRES_DB
+              value: postgres
+
+    
