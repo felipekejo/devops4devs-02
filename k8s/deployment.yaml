@@ -22,5 +22,7 @@ spec:
               value: postgres
             - name: POSTGRES_DB
               value: postgres
+          ports:
+            - containerPort: 5432
 
     
